@@ -16,6 +16,18 @@ const Projects = () => {
                 className="mb-6 rounded"
               />
             </div>
+            <div className="w-full max-w-xl lg:w-3/4 text-start">
+              <h6 className="mb-2 font-semibold">{project.title}</h6>
+              <p className="mb-4 text-neutral-400">{project.description}</p>
+              {project.technologies.map((tech, index) => (
+                <span
+                  key={index}
+                  className="mr-2 rounded Obg-neutral-900 px-2 py-1 text-sm font-medium text-purple-900"
+                >
+                  {tech}
+                </span>
+              ))}
+            </div>
           </div>
         ))}
       </div>
