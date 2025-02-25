@@ -1,7 +1,7 @@
 import { FaLinkedin } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
-import { FaSquareXTwitter } from "react-icons/fa6";
 import { FaInstagram } from "react-icons/fa";
+import { FaFacebook } from "react-icons/fa";
 
 const Navbar = () => {
   return (
@@ -11,10 +11,34 @@ const Navbar = () => {
       </div>
 
       <div className="m-8 flex items-center justify-center gap-4 text-2x1">
-        <FaLinkedin />
-        <FaGithub />
-        <FaInstagram />
-        <FaSquareXTwitter />
+        <a
+          href="https://www.linkedin.com/in/mohsin-ahmed-arfat"
+          target="_blank"
+          rel="noreferrer"
+        >
+          <FaLinkedin className="hover:text-cyan-300 cursor-pointer" />
+        </a>
+        <a
+          href="https://github.com/mohsinahmedarfat"
+          target="_blank"
+          rel="noreferrer"
+        >
+          <FaGithub className="hover:text-cyan-300 cursor-pointer" />
+        </a>
+        <a
+          href="https://www.instagram.com/mohsin.arfat"
+          target="_blank"
+          rel="noreferrer"
+        >
+          <FaInstagram className="hover:text-cyan-300 cursor-pointer" />
+        </a>
+        <a
+          href="https://www.facebook.com/mohsin.ahmed.arfat"
+          target="_blank"
+          rel="noreferrer"
+        >
+          <FaFacebook className="hover:text-cyan-300 cursor-pointer" />
+        </a>
       </div>
     </nav>
   );

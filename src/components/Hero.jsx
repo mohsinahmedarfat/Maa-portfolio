@@ -1,5 +1,5 @@
 import { HERO_CONTENT } from "../constants";
-import profilePic from "../assets/mohsinAhmedArfat.png";
+// import profilePic from "../assets/mohsinAhmedArfat.png";
 
 const Hero = () => {
   return (
@@ -19,9 +19,9 @@ const Hero = () => {
           </div>
         </div>
         <div className="w-full lg:w-1/2 lg:p-8">
-          <div className="flex justify-center">
+          {/* <div className="flex justify-center">
             <img src={profilePic} alt="Mohsin Ahmed Arfat" />
-          </div>
+          </div> */}
         </div>
       </div>
     </div>
