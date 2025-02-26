@@ -2,6 +2,7 @@ import { HERO_CONTENT } from "../constants";
 import { motion } from "framer-motion";
 import profilePic from "../assets/mohsinAhmedArfat.png";
 
+// func (return an object): make motion props shorter in tags for better readability
 const container = (delay) => ({
   hidden: { x: -100, opacity: 0 },
   visible: { x: 0, opacity: 1, transition: { duration: 0.5, delay: delay } },
@@ -39,13 +40,13 @@ const Hero = () => {
             </motion.p>
           </div>
         </div>
-
+        {/* image */}
         <div className="w-full lg:w-1/2">
           <div className="flex justify-center">
             <motion.img
-            initial={{ x: +100, opacity: 0 }}
-            animate={{ x: 0, opacity: 1 }}
-            transition={{ duration: 1, delay: 1.2 }}
+              initial={{ x: +100, opacity: 0 }}
+              animate={{ x: 0, opacity: 1 }}
+              transition={{ duration: 1, delay: 1.2 }}
               className="w-[85%]"
               src={profilePic}
               alt="Mohsin Ahmed Arfat"
